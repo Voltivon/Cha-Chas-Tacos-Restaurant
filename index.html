@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- Fontawesome CDN-->
+        <link rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer" 
+        />
+        <link rel=”stylesheet” href=”https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css”rel=”nofollow” integrity=”sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I” crossorigin=”anonymous”>
+
+        <!--Google Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Stint+Ultra+Condensed&display=swap" rel="stylesheet">
+       
+        <title>Cha Cha's Tacos</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        
+    </head>
+    <body>
+        <header class="header">
+            <div class="container-fluid">
+                <nav class="nav">
+                    <a href="index.html" class="logo">
+                        <!-- <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABmJLR0QA/wD/AP+gvaeTAAAEe0lEQVRoge2XW2wUZRSAvzMz3d3utrXcipRiBAqmlBZQE+SiiKAESYMxISSAT8olKpoICsYECRGvffDBaCVqTHxCTBBBhShXo0ZDpJSrVAjhpsUKBXa33bkdH9piC7SU3UUfnC+Z7Ox//nOb8//zn4GAgICAgICAgP8vkm2DWr84jOvMx5C5KJWAIuwD+QT3zw+kfJ2dTX9ZTUAPLbodQzahlHcxZT+qVVJWczxbPrOWgB5+ejB4W4HB15l6Et+fIiPer8+G36wkoHuXxogkalFKe6hST9wbLXevSWbq28jUAAChxBs3EDzAMPLN17PhOuMK6MEFdyKyOw1bii93SXnNnkz8Z6EC7jLUEdThBi9B7Ocz9Z5RBbRuzhBM8wiKmaYJF9McJmUfp/1WyrAC/lx8x0zj6bdfFm7LnEwisDJLwK7Cz8wCUAW8mq5y2ktIdz86AMs5nYmNNnxMKZaKLxrSUU6/ApIcp35WzhFDVO8BNqSjnMESsivws3WQSwX/dgLqeyNB01XvhA8j09VNvwK+PTRt3SsQ5EZO8U5YAG8vnPmkGIhj+luXvrPxcI801S5M1+lVCD22Vb145oiQY0xVwX72vfU1AnBs6gy/0G7dkBdC6B9RiTfmGr83hTkat2TvJdGdSVN3rVyz8XLz1byzotEQ+oiACEjbfpYO26L9XjustPZ7RVFt/e+rNuZO2t+vfc7KBVXRqBj35zvcm+fqqFtSfmm/ZhkwIOHHCpxWR01h8Yd8s8kUgM9mP/zL5JPemO4ydwzhbBS7IVeaEhZNcmtymOR7Ei5wiea55IR8cqMe+BCLuRgCsVwPgESzia+QSFhgQHPSxLENknGL1MUc9KKh2hCtj7kU9m/WwqIkoRy/+/21rcSsnfXpV2MsgPpcf+EEz/u5OyULKE4RKj5PEVDECattNNytI4CCtt9u1omAPbzjQHfhO4ZwNGY91abYyuczpvw2/oybtY15M/mh2Dr6yJdbS6HDW6i2UOZ9XxTasaiuJZxn/5O/Cqy9I4zpK7OOdP6ctU1YNS5GxFVe/CmJ2eGxeQKvjY0CdClrsYQVPyYIeZ0DXDc8hGcIs39NIR304iGhpjKSitk6r33sche5Y9+xUwcfKzuzfmjOzIEXXIaec2gMw5JJUT4qD7NtUA6HCw3Gn7KJ2B4NEXhiWh7bBlns7WtS19fkgeMthByfZkN5ZnKMDaWhbmUHehvsKMlhwskUBS0elyxl+cQoNaMibC+xqO1rMPa0TSzlsXOgxfwH89hVYs7fXL1lU3vcVx2lBW9Nf0XhpcknUtQW5XA+0rlh7Z/webwuSc2YKOeukJX95bJq1yVW3JfPoT5Wj2W9W3wW7UnyYWWUhlhnm71afEafddh+WxhRVl184euXO8qv2QvkvTl9MarVQOha8v+AFPBcfNnmd68UdNnM5K1+aKSKVCM67aaGdj1UtojBkvjyLQeuJb5uNxZbPaVSldkiTFSkDOhFxt8RXeIC5wU9pMh34rE2seLbfTfJV0BAQEBAQEDG/A1NTdU8D8p7fwAAAABJRU5ErkJggg==" alt="logo"/> -->
+                    </a>
+
+                    <div class="nav__button">
+                        <span class="nav__icon"></span>
+                    </div>
+
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="#home" class="nav-list-2 nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#menu" class="nav-list-1 nav-link">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#about" class="nav-list-3 nav-link">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contact" class="nav-list-4 nav-link">Contact</a>
+                        </li>
+                        
+                        
+                    </ul>
+
+                    <ul class="icons">
+                        <h2 class="icon-title">Cha Cha's Tacos</h2>
+                        <div class="media-icons">
+                        <li class="icon" href=""><i class="fab fa-twitter"></i></li>
+                        <li class="icon" href=""><a class="facebook-link" href="https://m.facebook.com/profile.php?id=150557798311565"><i class="fab fa-facebook-f"></i></a></li>
+                        <li class="icon"><i class="fab fa-instagram"></i></li>
+                    </div>
+                    </ul>
+                    
+                </nav>
+
+            </div>
+
+        </header>
+
+        <main>
+            <div class="hero" id="hero">
+                <div class="container">
+                    <div class="premium-container">
+                        <!-- <img  class="frontimg" src="https://fastly.4sqi.net/img/general/600x600/26040504_ob6coEjA_6a3o1R7E0OqAoXiRl3ghCRN28BMXcbA87A.jpg" alt="BuildingPhoto"> -->
+                        <h3 class="quality">Quality</h3>
+                    </div>
+
+                    <div class="restaurant-title">
+                        <h1 class="title">
+                            Fiesta tacos  <br>
+                            y mas
+                        </h1>
+                    </div>
+                    <button class="hero-btn">Menu</button>
+                </div>
+                <a href="#" class="go-top"><i class="fas fas-arrow-up"></i></a>
+            </div>
+
+            <section class="offers offers--0">
+                <div class="container ">
+                    <h2 class="section-title">Our Menu</h2>
+                    <h3 class="section-subtitle">BREAKFAST PLATES</h3>
+                    <hr>
+                    <p class="section-text">Served with beans, potato corn tortillas.</p>
+                    <div class="three-columns-grid">
+                        <div class="grid-item">
+                            <h3 class="subtitle"><strong>Chorizo Plate</strong></h3>
+                            
+                            <p class="paragraph"> Mexican Sausage and eggs.</p>
+                        
+                            <br>
+                            
+                            <br>
+                            <h3 class="subtitle"><strong>Machaca Plate</strong></h3>
+                          
+                            
+                            <p class="paragraph">Shredded beef, tomato, onion, and eggs.</p>
+                        </div>
+
+                        <div class="grid-item">
+                            <h3 class="subtitle"><strong>Chilaquiles</strong></h3>
+                            <p class="paragraph">Corn tortillas strips topped with green or red sauce. Does not include potato and tortillas.</p>
+                            <br>
+                            <h3 class="subtitle"><strong>Huevos Rancheros Plate</strong></h3>
+                            <p class="paragraph">2 over easy eggs, topped with green or red sauce, over a corn tortilla.</p>
+                        </div>
+                        
+                    </div>
+                    
+                    
+                </div>
+            </section>
+
+
+
+
+            <section class="offers offers--1">
+                <div class="container">
+                    
+                    <h3 class="section-subtitle">BREAKFAST BURRITOS</h3>
+                    
+                    <hr>
+                    <p class="section-text">Includes beans, egg, cheese and potato.</p>
+                    <div class="three-columns-grid">
+                        <div class="grid-item">
+                            <h3 class="subtitle"><strong>Asada Burrito</strong></h3> 
+                            <p class="paragraph">Grilled steak.</p>
+                            <br>
+                            <br>
+                            <h3 class="subtitle"><strong>Jamon Burrito</strong></h3>
+                            <p class="paragraph">Ham.</p>
+                            
+                        </div>
+                       
+                        <div class="grid-item">
+                            <h3 class="subtitle"><strong>Huevo Burrito</strong></h3>
+                            <p class="paragraph">Eggs only.</p>
+                            <br>
+                            <br>
+                            <h3 class="subtitle"><strong>Chorizo Burrito</strong></h3>
+                            <p class="paragraph">Mexican Sausage.</p>
+                            
+                        </div>
+
+                        <div class="grid-item">
+                            <h3 class="subtitle"><strong>Tocino Burrito</strong></h3>
+                            <p class="paragraph">Bacon.</p>
+                            <br>
+                            <br>
+                            <h3 class="subtitle"><strong>Machaca Burrito</strong></h3>
+                            <p class="paragraph">Shredded beef.</p>
+                        </div>
+
+                        <!-- <div class="grid-item">
+                            <h3 class="subtitle"><strong>Jamon Burrito</strong></h3>
+                            <p class="paragraph">Ham.</p>
+                            
+                        </div>
+
+                        <div class="grid-item">
+                            <h3 class="subtitle"><strong>Chorizo Burrito</strong></h3>
+                            <p class="paragraph">Mexican Sausage.</p>
+                            
+                        </div>
+
+                        <div class="grid-item">
+                            <h3 class="subtitle"><strong>Machaca Burrito</strong></h3>
+                            <p class="paragraph">Shredded beef.</p>
+                            
+                        </div> -->
+            <!-- <section class="about" id="about">
+                <div class="container-fluid">
+                    <div class="top-tart">
+                        <h3 class="section-subtitle">BREAKFAST PLATES</h3>
+
+
+                    </div>
+                </div> -->
+
+            </section>
+
+            <section class="offers offers--2">
+                <div class="container">
+                    <h3 class="section-subtitle">APPETIZERS</h3>
+                    <hr>
+                    <p class="section-text"></p>
+                    <div class="three-columns-grid">
+                        <div class="grid-item">
+                            <h3 class="subtitle"><strong>Cha-Cha's Quesadilla</strong></h3>
+                            <p class="paragraph">Quesadilla with your choice meat</p>
+                            
+                        </div>
+
+                        <div class="grid-item">
+                            <h3 class="subtitle"><strong>Nachos</strong></h3>
+                            <p class="paragraph">Tortilla chips topped with beans, pico de gallo, cheese, salsa, guacamole and sour cream.</p>
+                            <br>
+                            <br>
+                            <h3 class="subtitle"><strong>Plain Quesadilla</strong></h3>
+                            <p class="paragraph">Flour tortilla filled with melted cheese.</p>
+                        </div>
+                        
+                        <div class="grid-item">
+                            <h3 class="subtitle"><strong>Cha' Cha's Nachos</strong></h3>
+                            <p class="paragraph">Nachos with your choice of meat.</p>
+                            
+                        </div>
+                        
+                    </div>
+                    
+                    
+                </div>
+            </section>
+
+            <section class="offers offers--3">
+                <div class="container">
+                    <h3 class="section-subtitle">FIESTA PLATES</h3>
+                    <hr>
+                     <p class="section-text">Server with rice, beans, and corn tortillas</p>
+                    <div class="three-columns-grid">
+                        <div class="grid-item">
+                            <h3 class="subtitle"><strong>Chile Verde Fiesta Plate</strong></h3>
+                            <p class="paragraph">Pork cooked in tomatillo sauce.</p>
+                            <br>
+                            <br>
+                            <h3 class="subtitle"><strong>Steak Fajitas Fiesta Plate</strong></h3>
+                            <p class="paragraph">Grilled steak fajitas.</p>
+                            <br>
+                            <br>
+                            <h3 class="subtitle"><strong>Chimichanga Fiesta Plate</strong></h3>
+                            <p class="paragraph">Deep fried burrito filled with your choice of shredded beef of shredded chicken and cheese with guacamole and sour cream.</p>
+                        </div>
+
+                        <div class="grid-item">
+                            <h3 class="subtitle"><strong>Taqutios Fiesta Plate</strong></h3>
+                            <p class="paragraph">3 taquitos topped with guacamole and lettuce.</p>
+                            <br>
+                            <br>
+                            <h3 class="subtitle"><strong>Chicken Fajitas Fiesta Plate</strong></h3>
+                            <p class="paragraph">Grilled Fajitas Fiesta Plate.</p>
+                            <br>
+                            <h3 class="subtitle"><strong>2 Enchiladas Fiesta Plate</strong></h3>
+                            <p class="paragraph">With your choice of shredded beef, shredded chicken or cheese, topped with topped with lettuce and sour cream.</p>
+                            <br>
+                            <h3 class="subtitle"><strong>Chile Relleno Fiesta Plate</strong></h3>
+                            <p class="paragraph">Green pepper stuffed with cheese and topped with salsa.</p>
+                        </div>
+
+
+                        <div class="grid-item">
+                            <h3 class="subtitle"><strong>Mixed Fajitas Fiesta Plate</strong></h3>
+                            <p class="paragraph">Grilled steak and grilled chicken fajitas.</p>
+                            <br>
+                            <br>
+                            <h3 class="subtitle"><strong>Carne Asada Fiesta Plate</strong></h3>
+                            <p class="paragraph">Grilled steak.</p>
+                            <br>
+                            <br>
+                            <h3 class="subtitle"><strong>Pollo Asada Fiesta Plate</strong></h3>
+                            <p class="paragraph">Grilled chicken.</p>
+                            <br>
+                            <h3 class="subtitle"><strong>Pork Carnitas Fiesta Plate</strong></h3>
+                            <p class="paragraph">With your choice of shreddshredded chicken or cheese, topped with topped with lettuce and sour cream.</p>
+                            
+                        </div>
+
+                       
+
+                      
+
+
+                        
+                    </div>
+                    
+                    
+                </div>
+            </section>
+
+            <section class="offers offers--4">
+                <div class="container">
+                    <h3 class="section-subtitle">Enchiladas</h3>
+                    <hr>
+                    <p class="section-text"></p>
+                    <div class="three-columns-grid">
+                        <div class="grid-item">
+                            <h3 class="subtitle"><strong>Enchilada Plate</strong></h3>
+                            <p class="paragraph">2 enchiladas with your choice of shredded beef or chicken, topped with lettuce and sauce cream and served with rice and beans.</p>
+                            
+                        </div>
+
+                        <div class="grid-item">
+                            <h3 class="subtitle"><strong>Cheese Enchilada</strong></h3>
+                            <p class="paragraph">Served with rice.</p>
+                            
+                        </div>
+
+                        <div class="grid-item">
+                            <h3 class="subtitle"><strong>Enchilada</strong></h3>
+                            <p class="paragraph">Your choice of shredded beef or chicken served with rice.</p>
+                            
+                        </div>
+                        
+                    </div>
+                    
+                    
+                </div>
+            </section>
+
+            <section class="offers offers--5">
+                <div class="container">
+                    <h3 class="section-subtitle">Cha Cha's Classic</h3>
+                    <hr>
+                    <p class="section-text"></p>
+                    <div class="three-columns-grid">
+                        <div class="grid-item">
+                            <h3 class="subtitle"><strong>Fish Taco Plate</strong></h3>
+                            <p class="paragraph">2 char-boiled fish tacos, served with rice and beans.</p>
+                            <br>
+                            <br>
+                            <h3 class="subtitle"><strong>Crispy Taco Plate</strong></h3>
+                            <p class="paragraph">Your choice of shredded beef or shredded chicken, served with rice and beans.</p>
+                            <br>
+                            <br>
+                            <h3 class="subtitle"><strong>Garbage Burrito</strong></h3>
+                            <p class="paragraph">Carnitas, rice, beans, cheese, guacamole and our sour cream.</p>
+                        </div>
+
+                        
+
+                        <div class="grid-item">
+                            <h3 class="subtitle"><strong>Garbage Burrito</strong></h3>
+                            <p class="paragraph">Carnitas, rice, beans, cheese, guacamole and our sour cream.</p>
+                            <br>
+                            <h3 class="subtitle"><strong>Al Pastor Taco Plate</strong></h3>
+                            <p class="paragraph">2 marinated pork tacos, served with rice and beans.</p>
+                            <br>
+                            <h3 class="subtitle"><strong>Al Pastor Taco Plate</strong></h3>
+                            <p class="paragraph">2 marinated pork tacos, served with rice and beans.</p>
+                            
+                        </div>
+
+                   
+
+                        <div class="grid-item">
+                            <h3 class="subtitle"><strong>Torta</strong></h3>
+                            <p class="paragraph">Choice of meat, includes guacamole, tomato, mayo, jalapeno pepper, onions and lettuce.</p>
+                            <br>
+                            <h3 class="subtitle"><strong>Fiesta Grande Burrito</strong></h3>
+                            <p class="paragraph">Shredded beef, rice, beans, cheese, guacamole and sour cream.</p>
+                            
+                        </div>
+
+                     
+                        
+                    </div>
+                    
+                    
+                </div>
+            </section>
+
+            <section class="offers offers--6">
+                <div class="container">
+                    <h3 class="section-subtitle">Specials</h3>
+                    <hr>
+                    <p class="section-text"></p>
+                    <div class="three-columns-grid">
+                        <div class="grid-item">
+                            <h3 class="subtitle"><strong>California Green Burrito</strong></h3>
+                            <p class="paragraph">Carnitas, guacamole, pico de gallo and topped with green sauce, cheese and sour cream, served with rice and beans.</p>
+                            <br>
+                            <h3 class="subtitle"><strong>Al Pastor Burrito</strong></h3>
+                            <p class="paragraph">Beef or shredded chicken, served with rice and beans.</p>
+                            <br>
+                            <h3 class="subtitle"><strong>Burrito de Camaron</strong></h3>
+                            <p class="paragraph">Shrimp, rice, beans, lettuce, pico de gallo and chipotle sauce.</p>
+                            <br>
+                            <h3 class="subtitle"><strong>Burrito Del Mar</strong></h3>
+                            <p class="paragraph">Fish, scallops, shrimp, pico del gallo, rice and beans.</p>
+                        </div>
+
+                       
+
+                       
+
+                      
+                        <div class="grid-item">
+                            <h3 class="subtitle"><strong>Veggie Burrito</strong></h3>
+                            <p class="paragraph">Zucchini, bell pepper, onion, tomato, mushroom, cheese, rice and beans.</p>
+                            <br>
+                            <h3 class="subtitle"><strong>California Red Burrito</strong></h3>
+                            <p class="paragraph">Shredded beef, guacamole, pico de gallo and topped with red sauce, cheese and sour cream, served with rice and beans.</p>
+                            <br>
+                            <h3 class="subtitle"><strong>Antonio's Wet Burrito</strong></h3>
+                            <p class="paragraph">Shredded chicken, rice, beans, cheese, topped with two salsas and sour cream.</p>
+                            <br>
+
+                            
+                        </div>
+
+                       
+
+                        
+
+                        <div class="grid-item">
+                            <h3 class="subtitle"><strong>Santa Fe Burrito</strong></h3>
+                            <p class="paragraph">Grilled steak, green onion, green sauce, cheese, rice and beans.</p>
+                            
+                        </div>
+                        
+                    </div>
+                    
+                    
+                </div>
+            </section>
+
+            <section class="offers offers--7">
+                <div class="container">
+                    <h3 class="section-subtitle">Beverages</h3>
+                    <hr>
+                    <p class="section-text"></p>
+                    <div class="three-columns-grid">
+                        <div class="grid-item">
+                            <h3 class="subtitle"><strong>Horchata</strong></h3>
+                            <p class="paragraph"></p>
+                            
+                        
+                    </div>
+                    
+                    
+                </div>
+            </section>
+
+            <section class="about">
+                <div class="container">
+                    <h2 class="section-title-about">About us</h2>
+                    <h3 class="section-subtitle-about"></h3>
+                    <p class="section-text"></p>
+                    <div class="three-columns-grid">
+                        <div class="grid-item">
+                            <h3 class="subtitle"><strong</strong></h3>
+                            <img class="about-img"src="https://media-cdn.tripadvisor.com/media/photo-s/18/12/61/c4/20190625-181047-2-largejpg.jpg" alt="BuildingPhoto">
+                            <p class="paragraph-about">Cha Cha's Tacos is a Unpretentious counter-serve option in down-to-earth surroundings for casual Mexican food</p>
+                            <p class="paragraph-about">We are a family owned business</p>
+                            <p class="paragraph-about">We are located at <a href="https://www.google.com/maps/place/26393+Redlands+Blvd,+Redlands,+CA+92373/@34.0628456,-117.2291902,17z/data=!3m1!4b1!4m5!3m4!1s0x80dcabaed93d0ecb:0x1b6723324a8af6c6!8m2!3d34.0628456!4d-117.2291902">26393 Redlands Blvd, Redlands, CA 92373</a></p>
+                            <p class="paragraph-about">There is currently no prices listed, because of food shortages and inflation. We will update the prices soon, sorry for the inconvenience!</p>
+                        
+                    </div>
+                    
+                    
+                </div>
+            </section>
+
+            <section class="contact">
+                <div class="container">
+                    <h2 class="section-title-contact">Contact us</h2>
+                    <h3 class="section-subtitle-about"></h3>
+                    <p class="section-text"></p>
+                    <div class="three-columns-grid">
+                        <div class="grid-item">
+                            <h3 class="subtitle"><strong</strong></h3>
+                            <p class="paragraph-contact">Restaruant Address: <a href="https://www.google.com/maps/place/26393+Redlands+Blvd,+Redlands,+CA+92373/@34.0628456,-117.2291902,17z/data=!3m1!4b1!4m5!3m4!1s0x80dcabaed93d0ecb:0x1b6723324a8af6c6!8m2!3d34.0628456!4d-117.2291902">26393 Redlands Blvd, Redlands, CA 92373</a></p>
+                            <p class="paragraph-contact">Phone Number: (909) 799-0011 </p> 
+                            <p class="paragraph-contact">Monday: 8AM–9PM<br>
+                                Tuesday: 8AM–9PM<br>
+                                Wednesday: 8AM–9PM<br>
+                                Thursday: 8AM–9PM<br>
+                                Friday: 8AM–9PM<br>
+                                Saturday 8AM–3PM<br>
+                                Sunday:	Closed<br>
+                                 </p> 
+                            <p class="paragraph-contact">Service options: Dine-in · Takeout · No delivery</p>
+                        
+                    </div>
+                    
+                    
+                </div>
+            </section>
+        </main>
+       
+        
+        <script src="script.js" async defer></script>
+        <script src=”https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js” integrity=”sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo” crossorigin=”anonymous”></script>
+
+<script src=”https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js” integrity=”sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/” crossorigin=”anonymous”></script>
+    </body>
+</html>

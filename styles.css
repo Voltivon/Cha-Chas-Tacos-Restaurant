@@ -1,0 +1,420 @@
+/* Global Styles */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  overflow-x: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+.selector-for-some-widget {
+  box-sizing: content-box;
+}
+
+.container {
+  width: 100%;
+  max-width: 122.5rem;
+  margin: 0 auto;
+  padding: 0 2.4rem;
+  display: block;
+}
+.scroll-menu {
+  background-color: #333;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.container-fluid {
+  width: 100%;
+  max-width: 150rem;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Header */
+
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 9rem;
+  z-index: 1;
+  background-color: rgba(9, 9, 9, 0.8);
+}
+
+.logo {
+  cursor: pointer;
+  z-index: 50;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0);
+  z-index: -1;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s;
+}
+
+.open .nav::before {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.nav__button {
+  background-color: #fff;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  z-index: 2000;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+  text-align: center;
+  cursor: pointer;
+}
+
+.nav__icon {
+  position: relative;
+  margin-top: 2.5rem;
+}
+
+.nav__icon,
+.nav__icon::before,
+.nav__icon::after {
+  width: 2.5rem;
+  height: 2px;
+  background-color: #333;
+  display: inline-block;
+}
+
+.nav__icon::before,
+.nav__icon::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  transition: all 0.2s;
+}
+
+.nav__icon::before {
+  top: -0.7rem;
+}
+
+.nav__icon::after {
+  top: 0.7rem;
+}
+
+.open .nav__icon {
+  background-color: transparent;
+}
+
+.open .nav__icon::before {
+  top: 0;
+  transform: rotate(135deg);
+}
+
+.open .nav__icon::after {
+  top: 0;
+  transform: rotate(-135deg);
+}
+
+.nav-list {
+  list-style: none;
+  position: fixed;
+  top: 0;
+  left: -45px;
+  width: 18%;
+  height: 100vh;
+  background-color: #252525;
+  padding: 4.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  z-index: 100;
+  transform: translateX(-100%);
+  transition: transform 0.5s;
+}
+
+.open .nav-list {
+  transform: translateX(0);
+}
+
+.nav-item {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.nav-link {
+  display: block;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  letter-spacing: 2px;
+  margin-right: -2px;
+  transition: color 0.5s;
+}
+
+.nav-link:hover {
+  color: #c59d5f;
+}
+
+.icons {
+  list-style: none;
+  font-size: 2rem;
+  color: #fff;
+  display: flex;
+  margin-right: 200rem;
+  z-index: 50;
+
+  position: relative;
+}
+
+.icon-title {
+  position: relative;
+  font-size: 2.5rem;
+  bottom: 2rem;
+}
+
+.media-icons {
+  position: relative;
+  right: -2rem;
+}
+
+.icon {
+  cursor: pointer;
+}
+
+.icon:not(:last-child) {
+  margin-right: 1rem;
+}
+/* Hero */
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://cdn.usarestaurants.info/assets/uploads/7c8b717d966d4c640f90f140c585ea57_-united-states-california-san-bernardino-county-redlands-760686-cha-chas-tacoshtm.jpg")
+      center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.quality {
+  font-size: 1.2rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #e2e2d9;
+  margin-top: -2rem;
+}
+
+.title {
+  font-size: 12rem;
+  font-family: "Dancing Script", cursive;
+  color: #fff;
+}
+
+.go-top {
+  position: fixed;
+  width: 5rem;
+  height: rem;
+  background: #fff;
+  bottom: 2rem;
+  right: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  color: #333;
+  border-radius: 50%;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.frontimg {
+  width: 45rem;
+}
+
+.hero-btn {
+  background-color: black;
+  color: rgba(255, 255, 255);
+  border: none;
+  cursor: pointer;
+  padding: 0.25em 0.75em;
+  min-width: 10ch;
+  min-height: 44px;
+}
+
+.hero-btn:hover {
+  background-color: burlywood;
+}
+
+/* MENU */
+
+.offers {
+  width: 100%;
+  background-color: black;
+  padding-bottom: 10rem;
+}
+
+.offers h3 {
+  margin-bottom: 5rem;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 6.5rem;
+  font-family: "Cormorant Garamond";
+  padding-top: 5rem;
+}
+
+.section-text {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 100;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+
+  justify-content: center;
+  color: white;
+}
+
+.section-subtitle {
+  font-size: 3.5rem;
+  display: flex;
+  justify-content: center;
+  color: burlywood;
+  font-weight: 300;
+  position: relative;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  padding-right: 5rem;
+  padding-left: 5rem;
+}
+
+.three-columns-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 3rem;
+  font-weight: 400;
+  font-family: "Cormorant Garamond";
+  color: burlywood;
+  text-decoration: underline;
+  text-decoration-color: white;
+}
+
+.paragraph {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  color: #afafaf;
+}
+
+/* About */
+
+.about {
+  width: 100%;
+  padding-bottom: 7rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://cdn.usarestaurants.info/assets/uploads/7c8b717d966d4c640f90f140c585ea57_-united-states-california-san-bernardino-county-redlands-760686-cha-chas-tacoshtm.jpg")
+      center no-repeat;
+  background-size: cover;
+}
+
+.three-columns-grid {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  padding-top: 10rem;
+}
+
+.paragraph-about {
+  margin-top: 2rem;
+  font-size: 2rem;
+  color: white;
+}
+
+.section-title-about {
+  text-align: center;
+  font-size: 6.5rem;
+  font-family: "Cormorant Garamond";
+  padding-top: 2rem;
+  color: white;
+  font-family: "Dancing Script", cursive;
+}
+.about-img {
+  border: 2px solid white;
+}
+
+/* Contact */
+.contact {
+  width: 100%;
+  background: black;
+  background-size: cover;
+}
+
+.paragraph-contact {
+  margin-top: 2rem;
+  font-size: 2rem;
+  color: white;
+  position: relative;
+  bottom: 5rem;
+}
+
+.section-title-contact {
+  text-align: center;
+  font-size: 6.5rem;
+  font-family: "Cormorant Garamond";
+  padding-top: 4rem;
+  color: white;
+  font-family: "Dancing Script", cursive;
+}
+
+/* links */
+
+.facebook-link {
+  color: white;
+}
+.facebook-link:active {
+  color: white;
+}
+
+a {
+  color: darkblue;
+  text-decoration: underline;
+}
