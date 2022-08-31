@@ -1,6 +1,6 @@
 Cha Cha's Tacos is a casual mexican restaurant where you can get vintage mexican food.
 
-I created a website for a local business called Cha Cha's Tacos in Redlands, California. I created this website for them to try to increase traffic to there store and they didn't have a menu online before, so this was a big help.
+I created a website for a local business called Cha Cha's Tacos in Redlands, California. I created this website for them to try to increase traffic to their store and they didn't have a menu online before, so this was a big help.
 
 This was my first real world freelancing project
 
