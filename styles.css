@@ -42,15 +42,20 @@ a {
 
 .container-fluid {
   width: 100%;
-  max-width: 150rem;
-  margin: 0 auto;
-  padding: 2rem;
+  margin: 0 0;
+  padding: 2px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* Header */
 
 .header {
   width: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: flex-end;
   position: fixed;
   top: 0;
   left: 0;
@@ -186,6 +191,17 @@ a {
   color: #c59d5f;
 }
 
+.cha{
+  width: 80px;
+  height: 60px;
+  border-radius: 30px;
+  box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.2);
+  
+}
+
+
+
+
 .icons {
   list-style: none;
   font-size: 2rem;
@@ -193,14 +209,17 @@ a {
   display: flex;
   margin-right: 200rem;
   z-index: 50;
-
+  margin-top: 34px;
   position: relative;
+  padding-left: 20px;
 }
 
 .icon-title {
   position: relative;
   font-size: 2.5rem;
   bottom: 2rem;
+  
+  padding-left: 20px;
 }
 
 .media-icons {
@@ -274,6 +293,7 @@ a {
   padding: 0.25em 0.75em;
   min-width: 10ch;
   min-height: 44px;
+  box-shadow: 0px 0px 4px 5px rgba(255, 255, 255, 0.5);
 }
 
 .hero-btn:hover {
@@ -305,7 +325,6 @@ a {
   font-size: 1rem;
   font-weight: 100;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-
   justify-content: center;
   color: white;
 }
@@ -346,6 +365,10 @@ a {
   color: #afafaf;
 }
 
+.offers {
+  box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.2);
+}
+
 /* About */
 
 .about {
@@ -355,6 +378,7 @@ a {
     url("https://cdn.usarestaurants.info/assets/uploads/7c8b717d966d4c640f90f140c585ea57_-united-states-california-san-bernardino-county-redlands-760686-cha-chas-tacoshtm.jpg")
       center no-repeat;
   background-size: cover;
+  box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.2);
 }
 
 .three-columns-grid {
@@ -383,10 +407,12 @@ a {
 }
 
 /* Contact */
+
 .contact {
   width: 100%;
   background: black;
   background-size: cover;
+  box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.2);
 }
 
 .paragraph-contact {
@@ -419,3 +445,5 @@ a {
   color: darkblue;
   text-decoration: underline;
 }
+
+
